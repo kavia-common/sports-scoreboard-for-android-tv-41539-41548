@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App theme -->
     <style name="Theme.SportsTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/ocean_primary</item>
         <item name="colorSecondary">@color/ocean_secondary</item>
@@ -8,8 +9,11 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <!-- Define the generic Widget root to avoid style/Widget resolution errors -->
-    <style name="Widget"/>
+    <!-- Define a no-op base Widget to satisfy any style/Widget references -->
+    <style name="Widget" />
+
+    <!-- Define a Material-based Widget as an alternative parent if needed -->
+    <style name="Widget.MaterialComponents" parent="Theme.MaterialComponents" />
 
     <!-- Namespace for our app widgets -->
     <style name="Widget.SportsTV" />
