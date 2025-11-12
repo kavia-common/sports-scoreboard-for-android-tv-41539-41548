@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <title>Sports Scoreboard TV - Preview</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use paths relative to this index.html to work when serving the preview folder directly -->
   <link rel="stylesheet" href="./styles.css">
+  <!-- No <base> tag to avoid path resolution issues across hosting setups -->
 </head>
 <body>
   <header>
@@ -22,6 +24,7 @@
       </video>
     </section>
   </main>
+  <!-- Use relative path so it works if server root != repo root -->
   <script src="./preview.js"></script>
 </body>
 </html>

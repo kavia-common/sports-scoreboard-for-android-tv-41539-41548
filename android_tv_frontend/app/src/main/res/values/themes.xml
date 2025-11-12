@@ -8,9 +8,13 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <!-- Generic widget namespace root to satisfy references like style/Widget.SportsTV -->
+    <!-- Define the generic Widget root to avoid style/Widget resolution errors -->
+    <style name="Widget"/>
+
+    <!-- Namespace for our app widgets -->
     <style name="Widget.SportsTV" />
 
+    <!-- Card style used by item_match_card; keeps Ocean Professional visuals -->
     <style name="Widget.SportsTV.Card">
         <item name="android:background">@color/ocean_card</item>
         <item name="android:foreground">?attr/selectableItemBackground</item>
