@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sports Scoreboard TV</string>
+    <string name="matches_title">Live Matches</string>
+    <string name="loading">Loading…</string>
+    <string name="error_loading">Failed to load matches</string>
+    <string name="no_matches">No matches available</string>
+    <string name="retry">Retry</string>
+</resources>

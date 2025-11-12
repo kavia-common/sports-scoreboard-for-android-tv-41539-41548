@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SportsTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorSecondary">@color/ocean_secondary</item>
+        <item name="android:colorBackground">@color/ocean_background</item>
+        <item name="android:textColor">@color/ocean_text</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Generic widget namespace root to satisfy references like style/Widget.SportsTV -->
+    <style name="Widget.SportsTV" />
+
+    <style name="Widget.SportsTV.Card">
+        <item name="android:background">@color/ocean_card</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>

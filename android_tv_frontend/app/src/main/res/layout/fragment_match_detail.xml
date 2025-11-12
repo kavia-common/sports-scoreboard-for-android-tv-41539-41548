@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ocean_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:text="Match"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="@color/ocean_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailScore"
+            android:text="0 - 0"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/ocean_primary"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailStatus"
+            android:text="Status"
+            android:textColor="@color/ocean_secondary"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:useDefaultMargins="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+</LinearLayout>

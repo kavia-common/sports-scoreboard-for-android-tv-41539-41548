@@ -1,0 +1,15 @@
+Place your Firebase google-services.json file in this directory:
+sports-scoreboard-for-android-tv-41539-41548/android_tv_frontend/app/google-services.json
+
+Ensure Realtime Database has a "matches" root node with items shaped like:
+{
+  "matches": {
+    "{matchId}": {
+      "home": { "name": "Team A", "logoUrl": "https://..." },
+      "away": { "name": "Team B", "logoUrl": "https://..." },
+      "score": { "home": 0, "away": 0 },
+      "status": "Q1 12:00",
+      "highlight": { "title": "Top Play", "videoUrl": "https://..." }
+    }
+  }
+}
